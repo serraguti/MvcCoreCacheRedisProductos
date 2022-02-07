@@ -11,6 +11,11 @@
 <div>
     <h4>Producto</h4>
     <hr />
+    <a asp-controller="Productos"
+       asp-action="SeleccionarFavorito"
+       asp-route-id="@Model.IdProducto">
+        Seleccionar favorito
+    </a>
     <dl class="row">
         <dt class = "col-sm-2">Id Producto:</dt>
         <dd class = "col-sm-10">@Model.IdProducto</dd>

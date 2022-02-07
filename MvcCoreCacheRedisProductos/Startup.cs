@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MvcCoreCacheRedisProductos.Helpers;
 using MvcCoreCacheRedisProductos.Repositories;
+using MvcCoreCacheRedisProductos.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,12 @@ namespace MvcCoreCacheRedisProductos
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<ServiceCacheRedis>();
+            services.AddStackExchangeRedisCache(option =>
+            {
+                option.Configuration =
+                this.Configuration.GetValue<string>("cacheredis");
+            });
             services.AddTransient<PathProvider>();
             services.AddTransient<RepositoryProductos>();
             services.AddControllersWithViews();
