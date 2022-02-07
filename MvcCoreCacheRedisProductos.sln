@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcCoreCacheRedisProductos", "MvcCoreCacheRedisProductos\MvcCoreCacheRedisProductos.csproj", "{DD7D3FC2-09E2-43FF-B582-EA91153A0E28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteCacheRedis", "ClienteCacheRedis\ClienteCacheRedis.csproj", "{7ED7E156-8631-4383-860B-3AD74E4D6AFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DD7D3FC2-09E2-43FF-B582-EA91153A0E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD7D3FC2-09E2-43FF-B582-EA91153A0E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD7D3FC2-09E2-43FF-B582-EA91153A0E28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ED7E156-8631-4383-860B-3AD74E4D6AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED7E156-8631-4383-860B-3AD74E4D6AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED7E156-8631-4383-860B-3AD74E4D6AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED7E156-8631-4383-860B-3AD74E4D6AFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
